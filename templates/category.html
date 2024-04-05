@@ -52,7 +52,7 @@
             {% for product in products.object_list %}
             <div class="my_bottom_margin col-9 col-sm-12 col-md-4 xol-lg-4">
                 <div class="card text-center" style = "min-width:18rem; min-height:30rem;" >
-                    <a href="{{product.get_url}}"> <img class="card-img-top my_image" style="height=20rem;" src="{{product.image.url}}" alt="{{product.name}}"></a>
+                    <a href="{{product.get_url}}"> <img class="card-img-top my_image" src="{{product.image.url}}" alt="{{product.name}}"></a>
                 <div class="card-body">
                     <h4>{{product.name}}</h4>
                     <p>{{product.price}}</p>
